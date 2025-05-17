@@ -11,6 +11,12 @@ class nilai {
          $this->total = $args['total'] ?? $this->total;
          $this->target = $args['target'] ?? $this->target;
     }
+
+    public function __destruct() {
+        self::$value--;
+        echo 'halo man' . $this->total .'<br>';
+    
+    }
 }
 
 
@@ -42,6 +48,7 @@ echo "<br>";
 echo "Total: " . $test2->total . "<br>";    
 echo "Target: ". $test2->target ."<br>";
 echo "<br>";
+unset($test2);
 echo "Total: ". $test3->total . "<br>";
 echo "Target: ". $test3->target ."<br>";
 echo "<br>";
