@@ -3,5 +3,8 @@
         "psr-4": {
             "classes\\": "classes/"
         }
+    },
+    "require": {
+        "fakerphp/faker": "^1.24"
     }
 }
